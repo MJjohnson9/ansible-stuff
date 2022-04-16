@@ -1,0 +1,16 @@
+---
+- hosts: webserver-atlanta
+  user: root
+  ignore_errors: yes
+  tasks:
+
+
+     - name: ping server
+       ping:
+     - name: check the date
+       command: date
+     - name: run linux command
+       shell: pwd
+     - name: install mysql
+       yum: name=mysql state=present
+

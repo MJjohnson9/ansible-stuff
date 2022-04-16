@@ -1,0 +1,6 @@
+---
+# tasks file for apache
+- name: InstaLL Apache
+  yum: name={{ apache_package }} state=present 
+- name: Start apache daemon
+  service: name={{ apache_service }} state=started enabled=yes

@@ -1,0 +1,9 @@
+---
+ - hosts: server3
+   user: root
+   tasks:
+   roles:
+     # - apache
+      - mysql
+     # - php
+     # - wordpress

@@ -1,0 +1,8 @@
+---
+- hosts: database-server
+  user: root 
+  tasks: 
+     - name: install httpd 
+       yum: 
+         name: httpd
+         state: present 

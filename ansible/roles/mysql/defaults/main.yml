@@ -1,0 +1,7 @@
+---
+# defaults file for mysql
+db_package: mysql-server
+db_daemon: mysqld 
+db_name: webserver
+db_user: oracle
+db_user_password: school1 

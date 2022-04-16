@@ -1,0 +1,8 @@
+--- 
+- hosts: webserver-atlanta 
+  user: root 
+  tasks: 
+    - name: Install apache 
+      yum: 
+        name: httpd 
+        state: present 
